@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/402871ce97.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images_acg/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p class="developer-title">Software Developer</p>
+                <h1 class="first-title">Hi, I'm <span> Alejandro </span><br> Colodrero</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------- about start -------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images_acg/background.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <br>
+                    <p>I am a 23 year old guy currently studying 2nd year of DAW (Front-end) in Baena, Córdoba. And just
+                        finished DAM(Back-End) <br><br>
+                        My knowledge and skills are limited to the curriculum and the experience gained in this Higher
+                        Vocational Training, but I am eager to learn and absorb all the knowledge possible. I have a lot
+                        of enthusiasm for this new professional stage. <br><br>
+                        I must also clarify that my level of English is not determined by an academic certificate, but I
+                        am quite proficient. I can read and comprehend information in both written and multimedia
+                        content. I also find it easy to speak this language, approximately at a B1/B2 level.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <!-- <li><span>UI/UX</span><br>Designing Web/App interfaces</li>-->
+                            <li><span>Front-End</span><br>Web app Development</li>
+                            <li><span>Back-End</span><br>Building Android/IOS apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Junior Developer at Sepalo Software</span><br></li>
+                            <li>As a Junior Software Developer at Sepalo Software, I worked with Git, GitLab, and JIRA, focusing on version control and agile methodologies. I developed RESTful APIs and managed data with JSON and POSTMAN. <br><br> I also have experience in Android development using Kotlin and patterns like MVC and MVVM, with JWT for authentication. My training includes skills in ASP.NET MVC, Java, C#, and database design.
+                             <br><br>   Additionally, I’ve worked with Angular, JavaScript, HTML/CSS, always focused on effective communication and teamwork, with a strong command of IT English.</li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - 2024</span><br>Cross platform application development - DAM</li>
+                            <li><span>2024 - Currently </span><br>Web app Development - DAW</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------- Services start -------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Development of dynamic and responsive websites using technologies like HTML, CSS, JavaScript, and frameworks such as Angular. 
+                        Experience with RESTful web services, API integration, and Git version control.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>DDBB Design & Programming</h2>
+                    <p>Design and programming of databases using SQL and relational mapping technologies, 
+                        ensuring efficient data storage and retrieval. Experienced with C#, .NET Framework, and entity management.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>App Development</h2>
+                    <p>Design and development of Android applications using Kotlin, 
+                        implementing patterns like MVC and MVVM. Proficiency in API integration, JWT authentication, and data management with JSON.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------- Portfolio start -------------------- -->
+
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Diving App</h3>
+                        <p>Application developed for the final project of the DAM higher education degree (Development
+                            of multiplatform applications)</p>
+                        <a href="https://github.com/colodreroalex/DiveMagement"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Comming soon...</h3>
+                        <p></p>
+                        <a href=""><i class="fa-solid fa-hourglass-start"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Comming soon...</h3>
+                        <p></p>
+                        <a href="#"><i class="fa-solid fa-hourglass-start"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+
+    <!-- ---------------------- contact start -------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> damalexcolo@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> (+34) 645 13 11 03</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/alejandro-colodrero-garc%C3%ADa/"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/alex.colodrero/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/colodreroalex"><i class="fa-brands fa-github"></i></a>
+
+                    </div>
+                    <a href="images_acg/ACG_CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Alex. </p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove('active-link');
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById('sidemenu');
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwMD6vUN10cOFVN1IOSUNQKf6NKd17KTFq9v6N89UK1rFF1vU_NxAK7rm-5h6_ycGZ7/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+
+</body>
+
+</html>
