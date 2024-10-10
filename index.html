@@ -65,9 +65,15 @@
                     <div class="tab-contents" id="experience">
                         <ul>
                             <li><span>Junior Developer at Sepalo Software</span><br></li>
-                            <li>As a Junior Software Developer at Sepalo Software, I worked with Git, GitLab, and JIRA, focusing on version control and agile methodologies. I developed RESTful APIs and managed data with JSON and POSTMAN. <br><br> I also have experience in Android development using Kotlin and patterns like MVC and MVVM, with JWT for authentication. My training includes skills in ASP.NET MVC, Java, C#, and database design.
-                             <br><br>   Additionally, I’ve worked with Angular, JavaScript, HTML/CSS, always focused on effective communication and teamwork, with a strong command of IT English.</li>
-                            
+                            <li>As a Junior Software Developer at Sepalo Software, I worked with Git, GitLab, and JIRA,
+                                focusing on version control and agile methodologies. I developed RESTful APIs and
+                                managed data with JSON and POSTMAN. <br><br> I also have experience in Android
+                                development using Kotlin and patterns like MVC and MVVM, with JWT for authentication. My
+                                training includes skills in ASP.NET MVC, Java, C#, and database design.
+                                <br><br> Additionally, I’ve worked with Angular, JavaScript, HTML/CSS, always focused on
+                                effective communication and teamwork, with a strong command of IT English.
+                            </li>
+
                         </ul>
                     </div>
 
@@ -91,22 +97,25 @@
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Development</h2>
-                    <p>Development of dynamic and responsive websites using technologies like HTML, CSS, JavaScript, and frameworks such as Angular. 
+                    <p>Development of dynamic and responsive websites using technologies like HTML, CSS, JavaScript, and
+                        frameworks such as Angular.
                         Experience with RESTful web services, API integration, and Git version control.</p>
                     <a href="#">Learn More</a>
                 </div>
                 <div>
                     <i class="fas fa-crop-alt"></i>
                     <h2>DDBB Design & Programming</h2>
-                    <p>Design and programming of databases using SQL and relational mapping technologies, 
-                        ensuring efficient data storage and retrieval. Experienced with C#, .NET Framework, and entity management.</p>
+                    <p>Design and programming of databases using SQL and relational mapping technologies,
+                        ensuring efficient data storage and retrieval. Experienced with C#, .NET Framework, and entity
+                        management.</p>
                     <a href="#">Learn More</a>
                 </div>
                 <div>
                     <i class="fa-brands fa-android"></i>
                     <h2>App Development</h2>
-                    <p>Design and development of Android applications using Kotlin, 
-                        implementing patterns like MVC and MVVM. Proficiency in API integration, JWT authentication, and data management with JSON.</p>
+                    <p>Design and development of Android applications using Kotlin,
+                        implementing patterns like MVC and MVVM. Proficiency in API integration, JWT authentication, and
+                        data management with JSON.</p>
                     <a href="#">Learn More</a>
                 </div>
             </div>
@@ -187,6 +196,7 @@
             <p>Copyright <i class="fa-regular fa-copyright"></i> Alex. </p>
         </div>
     </div>
+    <div class="punto"></div>
 
     <script>
         var tablinks = document.getElementsByClassName('tab-links');
@@ -230,6 +240,42 @@
                 .catch(error => console.error('Error!', error.message))
         })
     </script>
+
+    <script>
+  // script.js
+const punto = document.querySelector('.punto');
+let posX = 0, posY = 0;
+let mouseX = 0, mouseY = 0;
+
+// Velocidad del seguimiento
+const suavizado = 0.1;
+
+document.addEventListener('mousemove', function(e) {
+    // Usamos `e.clientX` y `e.clientY` para coordenadas relativas a la ventana
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+});
+
+function seguirPuntero() {
+    // Interpolar entre la posición actual y la del puntero
+    posX += (mouseX - posX) * suavizado;
+    posY += (mouseY - posY) * suavizado;
+
+    // Actualizar las posiciones del punto usando valores relativos a la ventana
+    punto.style.left = posX + 'px';
+    punto.style.top = posY + 'px';
+
+    // Continuar el bucle de animación
+    requestAnimationFrame(seguirPuntero);
+}
+
+// Iniciar la animación
+seguirPuntero();
+
+
+
+    </script>
+
 
 
 

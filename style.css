@@ -464,6 +464,20 @@ form .btn2{
     font-size: 15px;
 }
 
+
+/* styles.css */
+.punto {
+    position: fixed;
+    width: 12px;
+    height: 12px;
+    background-color: #ff004f;
+    border-radius: 50%;
+    pointer-events: none; /* Para que no interfiera con los clics del puntero */
+    transform: translate(-50%, -50%); /* Centra el punto respecto al puntero */
+}
+
+
+
 /*-------------Responsive Section----------------*/
 
 nav .fas{
