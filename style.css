@@ -16,9 +16,9 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/background.png);
+    background-image: url(images_acg/back_img.jpeg);
     background-size: cover;
-    background-position: center;
+    background-attachment: fixed;
 }
 
 .container{
@@ -83,7 +83,8 @@ nav ul li a:hover::after{
 }
 
 .header-text p.developer-title {
-    transition: transform 0.3s ease; /* Transición suave para el zoom */
+    transition: transform 0.3s ease; 
+    display: inline-block;
 }
 
 .header-text p.developer-title:hover {
@@ -97,6 +98,7 @@ nav ul li a:hover::after{
     margin: 20px 0; /* Espaciado vertical */
     position: relative; /* Posición relativa para efectos adicionales */
     transition: transform 0.3s ease; /* Transición suave para transformaciones */
+   
 }
 
 .first-title span {
@@ -466,15 +468,7 @@ form .btn2{
 
 
 /* styles.css */
-.punto {
-    position: fixed;
-    width: 12px;
-    height: 12px;
-    background-color: #ff004f;
-    border-radius: 50%;
-    pointer-events: none; /* Para que no interfiera con los clics del puntero */
-    transform: translate(-50%, -50%); /* Centra el punto respecto al puntero */
-}
+
 
 
 

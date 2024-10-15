@@ -18,7 +18,7 @@
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#portfolio">Works</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
@@ -196,7 +196,7 @@
             <p>Copyright <i class="fa-regular fa-copyright"></i> Alex. </p>
         </div>
     </div>
-    <div class="punto"></div>
+    
 
     <script>
         var tablinks = document.getElementsByClassName('tab-links');
@@ -241,40 +241,7 @@
         })
     </script>
 
-    <script>
-  // script.js
-const punto = document.querySelector('.punto');
-let posX = 0, posY = 0;
-let mouseX = 0, mouseY = 0;
-
-// Velocidad del seguimiento
-const suavizado = 0.1;
-
-document.addEventListener('mousemove', function(e) {
-    // Usamos `e.clientX` y `e.clientY` para coordenadas relativas a la ventana
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-});
-
-function seguirPuntero() {
-    // Interpolar entre la posición actual y la del puntero
-    posX += (mouseX - posX) * suavizado;
-    posY += (mouseY - posY) * suavizado;
-
-    // Actualizar las posiciones del punto usando valores relativos a la ventana
-    punto.style.left = posX + 'px';
-    punto.style.top = posY + 'px';
-
-    // Continuar el bucle de animación
-    requestAnimationFrame(seguirPuntero);
-}
-
-// Iniciar la animación
-seguirPuntero();
-
-
-
-    </script>
+    
 
 
 
