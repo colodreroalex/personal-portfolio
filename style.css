@@ -8,18 +8,23 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #080808;
+    background-color: black;
     /*background-color: #1b1a1f;*/
     color: #fff;
 }
 
-#header{
+#header {
     width: 100%;
     height: 100vh;
     background-image: url(images_acg/back_img.jpeg);
-    background-size: cover;
+    background-size: contain; /* Ajustado */
     background-attachment: fixed;
+    background-position: right center; /* Centrada en vertical, derecha */
+    background-repeat: no-repeat; /* Evita que se repita */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 1) 100%), url(images_acg/back_img.jpeg);
 }
+
+
 
 .container{
     padding: 10px 10%;
